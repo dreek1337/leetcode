@@ -4,4 +4,4 @@
 class Solution:
     def contains_duplicate(self, nums: list[int]) -> bool:
 
-        return not sorted(nums) == sorted(set(nums))
+        return sorted(nums) != sorted(set(nums))
