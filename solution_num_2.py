@@ -3,6 +3,7 @@
 
 class Solution:
     def missingNumber(self, nums: list[int]) -> int:
-        difference = list(set(range(max(nums) + 1)) - set(nums))
+        num_for_return = max(nums) + 1
+        difference = list(set(range(num_for_return)) - set(nums))
 
-        return difference[0] if difference else max(nums) + 1
+        return difference[0] if difference else num_for_return
