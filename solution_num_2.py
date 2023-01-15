@@ -4,7 +4,5 @@
 class Solution:
     def missingNumber(self, nums: list[int]) -> int:
         difference = list(set(range(max(nums) + 1)) - set(nums))
-        if difference:
-            return difference[0]
-        else:
-            return max(nums) + 1
+
+        return difference[0] if difference else max(nums) + 1
