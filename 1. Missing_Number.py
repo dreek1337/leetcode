@@ -5,6 +5,7 @@ return the only number in the range that is missing from the array.
 """
 # https://leetcode.com/problems/missing-number/
 
+
 class Solution:
     def missingNumber(self, nums: list[int]) -> int:
         num_for_return = max(nums) + 1

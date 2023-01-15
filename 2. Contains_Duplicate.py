@@ -6,6 +6,7 @@ and return false if every element is distinct.
 """
 # https://leetcode.com/problems/contains-duplicate/
 
+
 class Solution:
     def contains_duplicate(self, nums: list[int]) -> bool:
 
