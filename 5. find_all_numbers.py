@@ -7,7 +7,7 @@ return an array of all the integers in the range [1, n] that do not appear in nu
 
 
 class Solution(object):
-    def findDisappearedNumbers(self, nums):
+    def findDisappearedNumbers(self, nums: list[int]) -> list[int]:
         set_of_nums = set(nums)
 
         return [i for i in range(1, len(nums) + 1) if i not in set_of_nums]
